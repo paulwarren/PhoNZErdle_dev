@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 div {
-  font-family: 'Calibri', 'Noto Sans', sans-serif;
+  font-family: Calibri,  sans-serif;
 }
 
 .cell-animation {
