@@ -1002,7 +1002,7 @@ devɘl,
 pɵːpɘs,
 fiːldz,
 
-]
+];
 
 if (CONFIG.normalization) {
   WORDS.forEach((val, i) => (WORDS[i] = val.normalize(CONFIG.normalization)))
