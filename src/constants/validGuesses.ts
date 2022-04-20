@@ -6427,7 +6427,7 @@ zɒmbiː,
 zɐʉnɘŋ,
 zʉːmɘŋ,
 
-]
+];
 
 if (CONFIG.normalization) {
   VALIDGUESSES.forEach(
