@@ -4,6 +4,7 @@ import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
 import { tomorrow } from '../../lib/words'
+import { spelling } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import { useTranslation } from 'react-i18next'
 
