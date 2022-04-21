@@ -27,4 +27,4 @@ export const getWordOfDay = () => {
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, spelling, solutionIndex, tomorrow } = getWordOfDay()
