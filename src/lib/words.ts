@@ -1,4 +1,5 @@
 import { WORDS } from '../constants/wordlist'
+import { SPELLS } from '../constants/wordlist'
 import { VALIDGUESSES } from '../constants/validGuesses'
 import { CONFIG } from '../constants/config'
 
@@ -20,6 +21,7 @@ export const getWordOfDay = () => {
 
   return {
     solution: WORDS[index % WORDS.length],
+    spelling: SPELLS[index % SPELLS.length],
     solutionIndex: index,
     tomorrow: nextday,
   }
