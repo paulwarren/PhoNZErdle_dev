@@ -61,7 +61,7 @@ export const StatsModal = ({
             />
           </div>
 		  <div>
-		  Solution was the word {spelling} / {solution} /
+		  Solution was the word {spelling}, /{solution}/
 		  </div>
           <button
             type="button"
