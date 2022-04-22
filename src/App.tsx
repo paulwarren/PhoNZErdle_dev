@@ -202,7 +202,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
 
       <Alert message={t('notEnoughLetters')} isOpen={isNotEnoughLetters} />
       <Alert message={t('wordNotFound')} isOpen={isWordNotFoundAlertOpen} />
-      <Alert message={t('solution', { solution })} isOpen={isGameLost} />
+      <Alert message={t('solution', { solution } {spelling})} isOpen={isGameLost} />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}
