@@ -1,4 +1,5 @@
 import { WORDS } from '../constants/wordlist'
+import { SPELLS } from '../constants/wordlist'
 import { VALIDGUESSES } from '../constants/validGuesses'
 import { CONFIG } from '../constants/config'
 
@@ -14,15 +15,16 @@ export const getWordOfDay = () => {
   // January 1, 2022 Game Epoch
   const epochMs = new Date(CONFIG.startDate).valueOf()
   const now = Date.now()
-  const msInDay = 86400000
+  const msInDay = 5000
   const index = Math.floor((now - epochMs) / msInDay)
   const nextday = (index + 1) * msInDay + epochMs
 
   return {
     solution: WORDS[index % WORDS.length],
+    spelling: SPELLS[index % SPELLS.length],
     solutionIndex: index,
     tomorrow: nextday,
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, spelling, solutionIndex, tomorrow } = getWordOfDay()
