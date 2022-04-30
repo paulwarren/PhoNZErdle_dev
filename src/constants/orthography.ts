@@ -20,6 +20,7 @@ export const ORTHOGRAPHY = [
  "iɘ",
  "eɘ",
  "ʉɘ",
+ "i",
  "p",
  "b",
  "t",
