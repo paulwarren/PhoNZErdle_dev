@@ -10,60 +10,32 @@ type Props = {
 export const PhoNZEModal = ({ isOpen, handleClose }: Props) => {
   const { t } = useTranslation()
   return (
-    <BaseModal title={t('about')} isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title={t('aboutPhoNZE')} isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500">
         <Trans
-          i18nKey="aboutAuthorSentence"
-          values={{ language: CONFIG.language, author: CONFIG.author }}
-        >
-          This is an open source clone of the game Wordle adapted to
-          {CONFIG.language} by
-          <a href={CONFIG.authorWebsite} className="underline font-bold">
-            {CONFIG.author}
-          </a>{' '}
+       >
+          This game uses the PhoNZE transcription system for New Zealand English
+          based on&nbsp; 
+
+          <a
+            href="https://www.degruyter.com/document/doi/10.1515/9783110197181-038/html?lang=en"
+            className="underline font-bold"
+            target="_blank"
+          >        
+          Bauer & Warren (2004)
+          </a>
+          .&nbsp;
         </Trans>
-        <Trans i18nKey="aboutCodeSentence">
-          Check out
+        <Trans>
+          Check out an&nbsp;
           <a
-            href="https://github.com/hannahcode/wordle"
+            href="https://www.wgtn.ac.nz/llc/llc_resources/phonze/"
             className="underline font-bold"
+            target="_blank"
           >
-            the original code
+            interactive guide
           </a>
-          by
-          <a
-            href="https://www.hannahmariepark.com/"
-            className="underline font-bold"
-          >
-            Hannah Park
-          </a>
-          or have a look at
-          <a
-            href="https://github.com/roedoejet/AnyLanguage-Wordle"
-            className="underline font-bold"
-          >
-            Aidan Pine's fork
-          </a>
-          and customize it for another language!
-        </Trans>
-        <Trans
-          i18nKey="aboutDataSentence"
-          values={{ wordListSource: CONFIG.wordListSource }}
-        >
-          The words for this game were sourced from
-          <a href={CONFIG.wordListSourceLink} className="underline font-bold">
-            {CONFIG.wordListSource}
-          </a>
-          .
-        </Trans>
-        <Trans i18nKey="aboutOriginalSentence">
-          You can also
-          <a
-            href="https://www.powerlanguage.co.uk/wordle/"
-            className="underline font-bold"
-          >
-            play the original here
-          </a>
+           &nbsp;to PhoNZE
         </Trans>
       </p>
     </BaseModal>
