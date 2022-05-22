@@ -11,7 +11,7 @@ export const PhoNZEModal = ({ isOpen, handleClose }: Props) => {
   const { t } = useTranslation()
   return (
     <BaseModal title={t('aboutPhoNZE')} isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500  width={400}">
+      <p className="text-sm text-gray-500">
         <Trans
        >
           This game uses the PhoNZE transcription system for New Zealand English
