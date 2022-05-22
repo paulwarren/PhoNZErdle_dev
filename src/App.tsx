@@ -6,6 +6,7 @@ import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
 import { Keyboard } from './components/keyboard/Keyboard'
 import { AboutModal } from './components/modals/AboutModal'
+import { PhoNZEModal } from './components/modals/PhoNZEModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { TranslateModal } from './components/modals/TranslateModal'
@@ -29,6 +30,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
   const [isGameWon, setIsGameWon] = useState(false)
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
+  const [isPhoNZEModalOpen, setIsPhoNZEModalOpen] = useState(false)
   const [isNotEnoughLetters, setIsNotEnoughLetters] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
   const [isI18nModalOpen, setIsI18nModalOpen] = useState(false)
@@ -146,7 +148,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
 
   return (
     <div className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-80 mx-auto items-center mb-8">
+      <div className="flex w-80 mx-auto items-center mb-2">
         <h1 className="text-xl grow font-bold">
           {t('gameName', { language: CONFIG.language })}
         </h1>
@@ -160,6 +162,25 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
+
+      <div className="flex w-80 mx-auto items-center mb-2">
+        <button
+        type="button"
+        className="mx-auto flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 select-none"
+        onClick={() => setIsPhoNZEModalOpen(true)}
+      >
+        {t('About PhoNZE')}
+      </button>
+
+        <button
+        type="button"
+        className="mx-auto flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 select-none"
+        onClick={() => setIsAboutModalOpen(true)}
+      >
+        {t('about')}
+      </button>
+      </div>   
+
       <Grid guesses={guesses} currentGuess={currentGuess} />
       <Keyboard
         onChar={onChar}
@@ -191,14 +212,10 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
         isOpen={isAboutModalOpen}
         handleClose={() => setIsAboutModalOpen(false)}
       />
-
-      <button
-        type="button"
-        className="mx-auto mt-8 flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 select-none"
-        onClick={() => setIsAboutModalOpen(true)}
-      >
-        {t('about')}
-      </button>
+      <PhoNZEModal
+        isOpen={isPhoNZEModalOpen}
+        handleClose={() => setIsPhoNZEModalOpen(false)}
+      />
 
       <Alert message={t('notEnoughLetters')} isOpen={isNotEnoughLetters} />
       <Alert message={t('wordNotFound')} isOpen={isWordNotFoundAlertOpen} />
