@@ -93,7 +93,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
       setCurrentGuess(newGuess)
     }
   }
-
+  
   const onDelete = () => {
     setCurrentGuess(currentGuess.slice(0, -1))
   }
