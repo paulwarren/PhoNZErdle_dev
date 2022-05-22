@@ -1,5 +1,6 @@
 {
     "about": "About this game",
+	"aboutPhoNZE": "About PhoNZE",
     "gameName": "{{language}}rdle",
     "enterKey": "Enter",
     "deleteKey": "Delete",
