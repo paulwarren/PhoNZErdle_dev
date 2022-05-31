@@ -26,13 +26,6 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
     }
   }
 
-  const onRightClick = (value: KeyValue) => {
-    if (value === 'ENTER') {
-    } else if (value === 'DELETE') {
-    } else {
-      
-    }
-  }
 
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
@@ -64,7 +57,6 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
               key={char}
               value={char}
               onClick={onClick}
-              onRightClick={onRightClick}
               status={charStatuses[char]}
             />
           )
@@ -79,7 +71,6 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
             key={char}
             value={char}
             onClick={onClick}
-            onRightClick={onRightClick}
                         status={charStatuses[char]}
           />
         ))}
@@ -93,13 +84,12 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
             key={char}
             value={char}
             onClick={onClick}
-            onRightClick={onRightClick}
                        status={charStatuses[char]}
           />
         ))}
       </div>
       <div className="flex justify-center">
-        <Key key="enterKey" width={65.4} value="ENTER" onClick={onClick}   onRightClick={onRightClick}>
+        <Key key="enterKey" width={65.4} value="ENTER" onClick={onClick} >
           {t('enterKey')}
         </Key>
         {ORTHOGRAPHY.slice(
@@ -110,11 +100,10 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
             key={char}
             value={char}
             onClick={onClick}
-            onRightClick={onRightClick}
                         status={charStatuses[char]}
           />
         ))}
-        <Key key="deleteKey" width={65.4} value="DELETE" onClick={onClick}               onRightClick={onRightClick}>
+        <Key key="deleteKey" width={65.4} value="DELETE" onClick={onClick}  >
           {t('deleteKey')}
         </Key>
       </div>
