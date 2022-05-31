@@ -1,4 +1,3 @@
-import { CONFIG } from '../../constants/config'
 import { BaseModal } from './BaseModal'
 import { Trans, useTranslation } from 'react-i18next'
 
@@ -34,6 +33,7 @@ export const PhoNZEModal = ({ isOpen, handleClose }: Props) => {
             <a
               href="https://www.degruyter.com/document/doi/10.1515/9783110197181-038/html?lang=en"
               className="underline font-bold"
+              rel="noreferrer" 
               target="_blank"
             >
               Bauer & Warren (2004)<br></br>
