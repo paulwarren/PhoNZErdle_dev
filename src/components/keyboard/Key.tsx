@@ -9,7 +9,6 @@ type Props = {
   width?: number
   status?: CharStatus
   onClick: (value: KeyValue) => void
-  onRightClick: (value: KeyValue) => void
 }
 
 export const Key = ({
@@ -18,7 +17,6 @@ export const Key = ({
   width = 40,
   value,
   onClick,
-  onRightClick,
 }: Props) => {
   const classes = classnames(
     'flex items-center justify-center rounded mx-0.5 font-bold cursor-pointer select-none',
@@ -36,19 +34,12 @@ export const Key = ({
     onClick(value)
     event.currentTarget.blur()
   }
-  const handleRightClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
-    onRightClick(value)
-    event.preventDefault();
-    return false;
-   // event.currentTarget.blur()
-  }
-  
+
   return (
     <button
       style={{ width: `${width}px`, height: '38px' }}
       className={classes}
       onClick={handleClick}
-      onContextMenu={handleRightClick}
     >
       {children || value}
     </button>
