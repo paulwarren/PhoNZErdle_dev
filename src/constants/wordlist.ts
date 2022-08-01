@@ -133,7 +133,6 @@ export const WORDS = [
 "bɘɹɒk",
 "bɛɹɐːʒ",
 "bɛɹɘl",
-"bɛɹiɘ",
 "bæesɘk",
 "bɛzɘl",
 "bæesɘn",
@@ -287,8 +286,6 @@ export const WORDS = [
 "ʧɛɹiɘt",
 "ʧɐːmɘŋ",
 "kɛzɘm",
-"ʃɛsɘ",
-"ʃɛsiː",
 "ʧɛtɘŋ",
 "ʧiːpli",
 "ʧiːtɘŋ",
@@ -362,7 +359,6 @@ export const WORDS = [
 "kɐpɘl",
 "kɐɹɘʤ",
 "kʉɘʒet",
-"kʊɹiɘ",
 "kɹɐːft",
 "kɹɛmp",
 "kɹɛŋk",
@@ -1056,8 +1052,6 @@ export const WORDS = [
 "ɒpʃɘn",
 "ɒɹɘnʤ",
 "oːdɘli",
-"oːdɘnɘt",
-"oːdŋɘt",
 "ɒspɹi",
 "æʉtbɛk",
 "æʉtkɐm",
@@ -1640,7 +1634,7 @@ export const WORDS = [
 "tenjɘ",
 "tɵːmɑet",
 "teɹɘs",
-"tɘɹæɘn",
+"tɘɹæen",
 "tekst",
 "θiɘɹiz",
 "θɵːmɘl",
@@ -2041,6 +2035,7 @@ export const WORDS = [
 "wɒbɘl",
 "wʊlɘn",
 
+
 ];
 
 export const SPELLS = [
@@ -2176,7 +2171,6 @@ export const SPELLS = [
 "baroque",
 "barrage",
 "barrel",
-"barrier",
 "basic",
 "basil",
 "basin",
@@ -2330,8 +2324,6 @@ export const SPELLS = [
 "chariot",
 "charming",
 "chasm",
-"chassis",
-"chassis",
 "chatting",
 "cheaply",
 "cheating",
@@ -2405,7 +2397,6 @@ export const SPELLS = [
 "couple",
 "courage",
 "courgette",
-"courier",
 "craft",
 "cramp",
 "crank",
@@ -3099,8 +3090,6 @@ export const SPELLS = [
 "option",
 "orange",
 "orderly",
-"ordinate",
-"ordinate",
 "osprey",
 "outback",
 "outcome",
@@ -4083,6 +4072,7 @@ export const SPELLS = [
 "whisky",
 "wobble",
 "woollen",
+
 
 ];
 
