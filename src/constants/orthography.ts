@@ -26,7 +26,7 @@ export const ORTHOGRAPHY = [
  "t",
  "d",
  "k",
- "g",
+ "ɡ",
  "f",
  "v",
  "s",

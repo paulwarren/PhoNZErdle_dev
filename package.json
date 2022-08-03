@@ -1,7 +1,7 @@
 {
     "name": "any-language-wordle",
     "version": "0.1.0",
-    "homepage": "https://paulwarren.github.io/AnyLanguage-Wordle",
+    "homepage": "https://paulwarren.github.io/PhoNZErdle",
     "private": true,
     "dependencies": {
         "@bcgov/bc-sans": "^1.0.1",

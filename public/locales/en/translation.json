@@ -11,9 +11,9 @@
     "howToPlay": "How to play",
     "instructions": "Guess the word in {{tries}} tries. After each guess, the color of the tiles will change to show how close your guess was to the word.",
     "pickYourLanguage": "Choose a language",
-    "correctSpotInstructions": "The letter W is in the word and in the correct spot.",
-    "wrongSpotInstructions": "The letter L is in the word but in the wrong spot.",
-    "notInWordInstructions": "The letter U is not in the word in any spot.",
+    "correctSpotInstructions": "The phoneme /ʃ/ is in the word and in the correct spot.",
+    "wrongSpotInstructions": "The phoneme /f/ is in the word but in the wrong spot.",
+    "notInWordInstructions": "The phoneme /n/ is not in the word in any spot.",
     "guessDistribution": "Guess Distribution",
     "statistics": "Statistics",
     "totalTries": "Total tries",
@@ -28,71 +28,71 @@
         "Well done!"
     ],
     "firstExampleWord": [{
-            "letter": "W",
+            "letter": "ʃ",
             "highlight": true
         },
         {
-            "letter": "E",
+            "letter": "ɒ",
             "highlight": false
         },
         {
-            "letter": "A",
+            "letter": "p",
             "highlight": false
         },
         {
-            "letter": "R",
+            "letter": "ɘ",
             "highlight": false
         },
         {
-            "letter": "Y",
+            "letter": "ŋ",
             "highlight": false
         }
     ],
     "secondExampleWord": [{
-            "letter": "P",
+            "letter": "m",
             "highlight": false
         },
         {
-            "letter": "I",
+            "letter": "ɐ",
             "highlight": false
         },
         {
-            "letter": "L",
+            "letter": "f",
             "highlight": true
         },
         {
-            "letter": "O",
+            "letter": "l",
             "highlight": false
         },
         {
-            "letter": "T",
+            "letter": "ɘ",
             "highlight": false
         }
     ],
     "thirdExampleWord": [{
-            "letter": "V",
+            "letter": "t",
             "highlight": false
         },
         {
-            "letter": "A",
+            "letter": "ɹ",
             "highlight": false
         },
         {
-            "letter": "G",
+            "letter": "e",
             "highlight": false
         },
         {
-            "letter": "U",
+            "letter": "n",
             "highlight": true
         },
         {
-            "letter": "E",
+            "letter": "d",
             "highlight": false
         }
     ],
     "aboutAuthorSentence": "This is an open source clone of the game Wordle adapted to {{language}} by <3>{{author}}</3>. ",
     "aboutCodeSentence": "Check out <1>the original code</1> by <3>Hannah Park</3> or have a look at <5>Aidan Pine's fork</5> and customize it for another language! ",
-    "aboutDataSentence": "The words for this game were sourced from <1>{{wordListSource}}</1>. ",
+    "aboutDataSentence": "The transcriptions of words for this game are based mainly on re-coding of transcriptions in BEEP (https://www.openslr.org/14/) but in part also on a NZE dictionary under development by Catherine Watson (https://profiles.auckland.ac.nz/c-watson). ",
     "aboutOriginalSentence": "You can also play the original  <1>here</1>",
     "languages": {
         "en": "English",
