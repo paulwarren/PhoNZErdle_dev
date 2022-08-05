@@ -25,8 +25,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
       onChar(value)
     }
   }
-
-
+  
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
       if (e.code === 'Enter') {
