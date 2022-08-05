@@ -30,6 +30,13 @@ export const Key = ({
     }
   )
 
+const handleMouseEnter = e => {
+    e.target.style.background = "grey"
+  }
+  const handleMouseLeave = e => {
+    e.target.style.background = "maroon"
+  }
+  
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
     onClick(value)
     event.currentTarget.blur()
@@ -40,6 +47,9 @@ export const Key = ({
       style={{ width: `${width}px`, height: '38px' }}
       className={classes}
       onClick={handleClick}
+	         onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+
     >
       {children || value}
     </button>
