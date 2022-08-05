@@ -30,11 +30,11 @@ export const Key = ({
     }
   )
 
-const handleMouseEnter = e => {
-    e.target.style.background = "grey"
+const handleMouseEnter = (event) => {
+   event.currentTarget.style.background = "grey"
   }
-  const handleMouseLeave = e => {
-    e.target.style.background = "maroon"
+  const handleMouseLeave = (event) => {
+    event.currentTarget.style.background = "maroon"
   }
   
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
