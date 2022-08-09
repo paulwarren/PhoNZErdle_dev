@@ -1,7 +1,8 @@
-import { ReactNode } from 'react'
-import classnames from 'classnames'
-import { KeyValue } from '../../lib/keyboard'
-import { CharStatus } from '../../lib/statuses'
+import { ReactNode } from 'react';
+import classnames from 'classnames';
+import { TOOLTIPS } from '../../constants/orthography';
+import { KeyValue } from '../../lib/keyboard';
+import { CharStatus } from '../../lib/statuses';
 
 type Props = {
   children?: ReactNode
@@ -29,7 +30,11 @@ export const Key = ({
         status === 'present',
     }
   )
-
+let tooltip = ''
+  if (value in TOOLTIPS) {
+    tooltip = TOOLTIPS[value]
+  }
+  
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
     onClick(value)
     event.currentTarget.blur()
@@ -40,6 +45,7 @@ export const Key = ({
       style={{ width: `${width}px`, height: '38px' }}
       className={classes}
       onClick={handleClick}
+	  data-tip={tooltip}
     >
       {children || value}
     </button>

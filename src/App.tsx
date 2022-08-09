@@ -1,27 +1,25 @@
-import { InformationCircleIcon } from '@heroicons/react/outline'
-import { ChartBarIcon } from '@heroicons/react/outline'
-import { TranslateIcon } from '@heroicons/react/outline'
-import { useState, useEffect } from 'react'
-import { Alert } from './components/alerts/Alert'
-import { Grid } from './components/grid/Grid'
-import { Keyboard } from './components/keyboard/Keyboard'
-import { AboutModal } from './components/modals/AboutModal'
-import { PhoNZEModal } from './components/modals/PhoNZEModal'
-import { InfoModal } from './components/modals/InfoModal'
-import { StatsModal } from './components/modals/StatsModal'
-import { TranslateModal } from './components/modals/TranslateModal'
-import { isWordInWordList, isWinningWord, solution, spelling } from './lib/words'
-import { addStatsForCompletedGame, loadStats } from './lib/stats'
-import {
-  loadGameStateFromLocalStorage,
-  saveGameStateToLocalStorage,
-} from './lib/localStorage'
+import '@bcgov/bc-sans/css/BCSans.css';
+import './i18n';
 
-import { CONFIG } from './constants/config'
-import ReactGA from 'react-ga'
-import '@bcgov/bc-sans/css/BCSans.css'
-import './i18n'
-import { withTranslation, WithTranslation } from 'react-i18next'
+import { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
+import { withTranslation, WithTranslation } from 'react-i18next';
+import ReactTooltip from 'react-tooltip';
+
+import { ChartBarIcon, InformationCircleIcon, TranslateIcon } from '@heroicons/react/outline';
+
+import { Alert } from './components/alerts/Alert';
+import { Grid } from './components/grid/Grid';
+import { Keyboard } from './components/keyboard/Keyboard';
+import { AboutModal } from './components/modals/AboutModal';
+import { PhoNZEModal } from './components/modals/PhoNZEModal';
+import { InfoModal } from './components/modals/InfoModal';
+import { StatsModal } from './components/modals/StatsModal';
+import { TranslateModal } from './components/modals/TranslateModal';
+import { CONFIG } from './constants/config';
+import { loadGameStateFromLocalStorage, saveGameStateToLocalStorage} from './lib/localStorage';
+import { addStatsForCompletedGame, loadStats } from './lib/stats';
+import { isWordInWordList, isWinningWord, solution, spelling } from './lib/words';
 
 const ALERT_TIME_MS = 2000
 
@@ -225,6 +223,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
         isOpen={successAlert !== ''}
         variant="success"
       />
+	  <ReactTooltip />
     </div>
   )
 }
