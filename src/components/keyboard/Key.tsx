@@ -17,7 +17,7 @@ export const Key = ({
   status,
   width = 40,
   value,
-  onClick,
+    onClick,
 }: Props) => {
   const classes = classnames(
     'flex items-center justify-center rounded mx-0.5 font-bold cursor-pointer select-none',
@@ -30,7 +30,8 @@ export const Key = ({
         status === 'present',
     }
   )
-let tooltip = ''
+
+  let tooltip = ''
   if (value in TOOLTIPS) {
     tooltip = TOOLTIPS[value]
   }
@@ -45,7 +46,7 @@ let tooltip = ''
       style={{ width: `${width}px`, height: '38px' }}
       className={classes}
       onClick={handleClick}
-	  data-tip={tooltip}
+	    data-tip={tooltip}
     >
       {children || value}
     </button>
