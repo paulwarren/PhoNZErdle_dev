@@ -38,7 +38,8 @@ export const PhoNZEModal = ({ isOpen, handleClose }: Props) => {
             >
               Bauer & Warren (2004)<br></br>
             </a>
-            .&nbsp;
+            .&nbsp;Note that when key tips are ON, then hovering over some of the keyboard keys shows the lexical set labels below for 
+            vowels and gives examples for less familiar consonant symbols
           </Trans>
           <Trans>
             <table>

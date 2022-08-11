@@ -261,7 +261,7 @@ export const WORDS = [
 "keɘfɹiː",
 "keɘfʊl",
 "keɘfɘl",
-"kiɘfli",
+"keɘfli",
 "keɘlɘs",
 "kɐːnɘʤ",
 "kɐːpɘt",

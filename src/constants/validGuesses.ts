@@ -1371,7 +1371,7 @@ export const VALIDGUESSES = [
 "keɘfɹiː",
 "keɘfʊl",
 "keɘfɘl",
-"kiɘfli",
+"keɘfli",
 "keɘlɘs",
 "keɘɹɘz",
 "kɘɹes",
