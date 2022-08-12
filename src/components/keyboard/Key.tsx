@@ -31,13 +31,6 @@ export const Key = ({
     }
   )
 
-
-const handleMouseEnter: React.MouseEventHandler<HTMLButtonElement> = (event) => {
-   event.currentTarget.style.background = ""
-  }
-  const handleMouseLeave: React.MouseEventHandler<HTMLButtonElement> = (event) => {
-    event.currentTarget.style.background = ""
-
   let tooltip = ''
   if (value in TOOLTIPS) {
     tooltip = TOOLTIPS[value]
@@ -53,8 +46,6 @@ const handleMouseEnter: React.MouseEventHandler<HTMLButtonElement> = (event) => 
       style={{ width: `${width}px`, height: '38px' }}
       className={classes}
       onClick={handleClick}
-	  onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
 	    data-tip={tooltip}
     >
       {children || value}
