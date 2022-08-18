@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/PhoNZErdle/static/css/main.daeb58d0.css",
-    "main.js": "/PhoNZErdle/static/js/main.0fbe98a7.js",
-    "static/js/787.c1969c17.chunk.js": "/PhoNZErdle/static/js/787.c1969c17.chunk.js",
-    "static/media/BCSans-Bold.woff": "/PhoNZErdle/static/media/BCSans-Bold.252ecf87ea37c93b293c.woff",
-    "static/media/BCSans-BoldItalic.woff": "/PhoNZErdle/static/media/BCSans-BoldItalic.73ed5137b2c4a42b754f.woff",
-    "static/media/BCSans-Italic.woff": "/PhoNZErdle/static/media/BCSans-Italic.9c3be03a06d30a6ecff0.woff",
-    "static/media/BCSans-Regular.woff": "/PhoNZErdle/static/media/BCSans-Regular.0079ea8e42d4e81a13d2.woff",
-    "index.html": "/PhoNZErdle/index.html",
-    "static/media/getFetch.cjs": "/PhoNZErdle/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.daeb58d0.css.map": "/PhoNZErdle/static/css/main.daeb58d0.css.map",
-    "main.0fbe98a7.js.map": "/PhoNZErdle/static/js/main.0fbe98a7.js.map",
-    "787.c1969c17.chunk.js.map": "/PhoNZErdle/static/js/787.c1969c17.chunk.js.map"
+    "main.css": "/PhoNZErdle_dev/static/css/main.5912194f.css",
+    "main.js": "/PhoNZErdle_dev/static/js/main.cd8fbd6c.js",
+    "static/js/787.c1969c17.chunk.js": "/PhoNZErdle_dev/static/js/787.c1969c17.chunk.js",
+    "static/media/BCSans-Bold.woff": "/PhoNZErdle_dev/static/media/BCSans-Bold.252ecf87ea37c93b293c.woff",
+    "static/media/BCSans-BoldItalic.woff": "/PhoNZErdle_dev/static/media/BCSans-BoldItalic.73ed5137b2c4a42b754f.woff",
+    "static/media/BCSans-Italic.woff": "/PhoNZErdle_dev/static/media/BCSans-Italic.9c3be03a06d30a6ecff0.woff",
+    "static/media/BCSans-Regular.woff": "/PhoNZErdle_dev/static/media/BCSans-Regular.0079ea8e42d4e81a13d2.woff",
+    "index.html": "/PhoNZErdle_dev/index.html",
+    "static/media/getFetch.cjs": "/PhoNZErdle_dev/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.5912194f.css.map": "/PhoNZErdle_dev/static/css/main.5912194f.css.map",
+    "main.cd8fbd6c.js.map": "/PhoNZErdle_dev/static/js/main.cd8fbd6c.js.map",
+    "787.c1969c17.chunk.js.map": "/PhoNZErdle_dev/static/js/787.c1969c17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.daeb58d0.css",
-    "static/js/main.0fbe98a7.js"
+    "static/css/main.5912194f.css",
+    "static/js/main.cd8fbd6c.js"
   ]
 }
