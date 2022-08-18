@@ -27,7 +27,15 @@ export const PhoNZEModal = ({ isOpen, handleClose }: Props) => {
   `}</style><BaseModal title={t('aboutPhoNZE')} isOpen={isOpen} handleClose={handleClose}>
         <p className="text-sm text-gray-500">
           <Trans>
-            This game uses the PhoNZE transcription system for New Zealand English
+          PhoNZErdle instructions can be found&nbsp; 
+			 <a
+              href="https://www.intro2psycholing.net/PhoNZErdle/PhoNZErdle_instructions.pdf"
+              className="underline font-bold"
+              rel="noreferrer" 
+              target="_blank"
+            >
+              here.</a> 
+              <br></br>This game uses the PhoNZE transcription system for New Zealand English
             based on&nbsp;
 
             <a

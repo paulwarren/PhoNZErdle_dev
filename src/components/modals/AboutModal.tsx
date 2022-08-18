@@ -21,9 +21,11 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
           <a href={CONFIG.authorWebsite} className="underline font-bold">
             {CONFIG.author}
           </a>{' '}
-        </Trans>
+			</Trans>
         <Trans i18nKey="aboutCodeSentence">
-          Check out
+
+			      
+		Check out
           <a
             href="https://github.com/hannahcode/wordle"
             className="underline font-bold"
@@ -45,6 +47,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
             Aidan Pine's fork
           </a>
           and customize it for another language!
+  
         </Trans>
         <Trans
           i18nKey="aboutDataSentence"

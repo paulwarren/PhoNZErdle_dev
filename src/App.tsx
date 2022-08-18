@@ -157,6 +157,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
         <h1 className="text-xl grow font-bold">
           {t('gameName', { language: CONFIG.language })}
         </h1>
+		<h2>(Practice version)</h2>
         {translateElement}
         <InformationCircleIcon
           className="h-6 w-6 cursor-pointer"
@@ -174,7 +175,7 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
         className="mx-auto flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none  select-none"
         onClick={() => setIsPhoNZEModalOpen(true)}
       >
-        {t('About PhoNZE')}
+        {t('Instructions')}
       </button>
       <button
         type="button"
