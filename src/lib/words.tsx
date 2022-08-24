@@ -17,7 +17,7 @@ export const ModeTime: React.FC<IProps> = ({practice}) => {
   const index = Math.floor((now - epochMs) / msInDay)
   const nextday = (index + 1) * msInDay + epochMs
   
-  console.log( msInDay, index)
+  console.log( msInDay, index, nextday)
   
   return (
   <div>
