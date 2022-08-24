@@ -6,7 +6,7 @@ import ReactGA from 'react-ga'
 import { withTranslation, WithTranslation } from 'react-i18next'
 import ReactTooltip from 'react-tooltip'
 import React from "react"
-import { ChartBarIcon, InformationCircleIcon, TranslateIcon } from '@heroicons/react/outline'
+import { ChartBarIcon, InformationCircleIcon, PresentationChartLineIcon, TranslateIcon } from '@heroicons/react/outline'
 
 import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
@@ -21,6 +21,8 @@ import { loadGameStateFromLocalStorage, saveGameStateToLocalStorage} from './lib
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import { isWordInWordList, isWinningWord, solution, spelling } from './lib/words'
 import cx from "classnames"
+import  { ModeTime }  from './lib/words'
+
 const ALERT_TIME_MS = 2000
 
 const App: React.FC<WithTranslation> = ({ t, i18n }) => {
@@ -135,11 +137,13 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
     }
   }
   const [toggle, setToggle] = React.useState<boolean>(false)
-
+	const [practice, setPractice] = React.useState<boolean>(false)
+  
   const buttonClasses = cx({
     "bg-indigo-100": !toggle,
     "bg-green-200": toggle,
   })
+
 
   let translateElement = <div></div>
   if (CONFIG.availableLangs.length > 1) {
@@ -157,9 +161,19 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
         <h1 className="text-xl grow font-bold">
           {t('gameName', { language: CONFIG.language })}
         </h1>
-		<h2>(Practice version)</h2>
+		    <h2>(Practice version)</h2>
         {translateElement}
-        <InformationCircleIcon
+          <button
+          type="button"
+          className={`mx-auto flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 focus:outline-none   ${buttonClasses}`}
+          onClick={() => {
+            setPractice(!practice)
+            }}
+          >
+          {practice ?t('Pratice mode'): t('Daily mode')}
+          </button>  
+          <ModeTime practice={practice} />
+<InformationCircleIcon
           className="h-6 w-6 cursor-pointer"
           onClick={() => setIsInfoModalOpen(true)}
         />
@@ -168,31 +182,29 @@ const App: React.FC<WithTranslation> = ({ t, i18n }) => {
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
-
-      <div className="flex w-80 mx-auto items-center mb-2">
+    <div className="flex w-80 mx-auto items-center mb-2">
         <button
         type="button"
         className="mx-auto flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none  select-none"
         onClick={() => setIsPhoNZEModalOpen(true)}
-      >
+        >
         {t('Instructions')}
       </button>
       <button
         type="button"
         className={`mx-auto flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 focus:outline-none   ${buttonClasses}`}
         onClick={() => setToggle(!toggle)}
-      >
+        >
         {toggle ?t('Key tips ON'): t('Key tips OFF')}
       </button>
-        <button
+      <button
         type="button"
         className="mx-auto flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none  select-none"
         onClick={() => setIsAboutModalOpen(true)}
-      >
+        >
         {t('about')}
       </button>
-      </div>   
-
+    </div>   
       <Grid guesses={guesses} currentGuess={currentGuess} />
       <Keyboard
         onChar={onChar}
