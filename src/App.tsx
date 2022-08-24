@@ -6,7 +6,7 @@ import ReactGA from 'react-ga'
 import { withTranslation, WithTranslation } from 'react-i18next'
 import ReactTooltip from 'react-tooltip'
 import React from "react"
-import { ChartBarIcon, InformationCircleIcon, PresentationChartLineIcon, TranslateIcon } from '@heroicons/react/outline'
+import { ChartBarIcon, InformationCircleIcon, TranslateIcon } from '@heroicons/react/outline'
 
 import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
